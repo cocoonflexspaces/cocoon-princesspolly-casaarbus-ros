@@ -203,7 +203,8 @@
   .dh-badge { width: 34px; height: 34px; background: var(--terracotta); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .dh-title { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); line-height: 1.1; }
   .dh-sub { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; color: var(--ink-mute); margin-top: 2px; }
-  .dh-right { text-align: right; }
+  .dh-right { display: flex; gap: 20px; align-items: flex-start; }
+  .dh-access-item { text-align: right; }
   .dh-access { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--terracotta); margin-bottom: 2px; }
   .dh-access-val { font-size: 11px; font-weight: 700; color: var(--ink); }
 
@@ -330,6 +331,8 @@
 
     /* Day header */
     .day-header { padding: 14px 16px; }
+    .dh-right { flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; margin-top: 8px; }
+    .dh-access-item { text-align: left; }
     .dh-title { font-size: 17px; }
     .dh-access-val { font-size: 13px; }
 
@@ -680,8 +683,14 @@
       </div>
     </div>
     <div class="dh-right">
-      <div class="dh-access">Casa Manager Window</div>
-      <div class="dh-access-val">9:00am &ndash; 8:15pm</div>
+      <div class="dh-access-item">
+        <div class="dh-access">Client Access</div>
+        <div class="dh-access-val">No guest sessions</div>
+      </div>
+      <div class="dh-access-item">
+        <div class="dh-access">Casa Manager Window</div>
+        <div class="dh-access-val">9:00am &ndash; 8:15pm</div>
+      </div>
     </div>
   </div>
   <div class="day-body">
@@ -759,8 +768,14 @@
       </div>
     </div>
     <div class="dh-right">
-      <div class="dh-access">Client Access</div>
-      <div class="dh-access-val">10:00am &ndash; 8:00pm</div>
+      <div class="dh-access-item">
+        <div class="dh-access">Client Access</div>
+        <div class="dh-access-val">10:00am &ndash; 8:00pm</div>
+      </div>
+      <div class="dh-access-item">
+        <div class="dh-access">Casa Manager Window</div>
+        <div class="dh-access-val">9:45am &ndash; 8:15pm</div>
+      </div>
     </div>
   </div>
   <div class="day-body">
@@ -844,8 +859,14 @@
       </div>
     </div>
     <div class="dh-right">
-      <div class="dh-access">Client Access</div>
-      <div class="dh-access-val">10:00am &ndash; 8:00pm</div>
+      <div class="dh-access-item">
+        <div class="dh-access">Client Access</div>
+        <div class="dh-access-val">10:00am &ndash; 8:00pm</div>
+      </div>
+      <div class="dh-access-item">
+        <div class="dh-access">Casa Manager Window</div>
+        <div class="dh-access-val">9:45am &ndash; 8:15pm</div>
+      </div>
     </div>
   </div>
   <div class="day-body">
@@ -923,8 +944,14 @@
       </div>
     </div>
     <div class="dh-right">
-      <div class="dh-access">Casa Manager Window</div>
-      <div class="dh-access-val">9:45am &ndash; 9:00pm</div>
+      <div class="dh-access-item">
+        <div class="dh-access">Client Access</div>
+        <div class="dh-access-val">10:00am &ndash; 8:00pm</div>
+      </div>
+      <div class="dh-access-item">
+        <div class="dh-access">Casa Manager Window</div>
+        <div class="dh-access-val">9:45am &ndash; 9:00pm</div>
+      </div>
     </div>
   </div>
   <div class="day-body">
